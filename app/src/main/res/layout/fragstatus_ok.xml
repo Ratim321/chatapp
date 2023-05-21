@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/statusmainbackground"
+    android:background="@drawable/freindreq"
+    android:layout_margin="15sp"
+    android:elevation="15sp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/statusimg1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/statusrequestid"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/statusimg1"
+            android:padding="10dp"
+            android:text="Sent"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/statusimg1"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Sent"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/positive"
+            android:layout_centerInParent="true"
+
+
+            android:paddingRight="120dp"
+            android:text="Accept Request ?"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/positive"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:elevation="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/negative"
+            android:background="@drawable/notificationpositivebtn"
+            android:text="Yes"
+            android:textStyle="bold"
+
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/negative"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:elevation="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/notificationnegativebtn"
+            android:text="No"
+            android:textStyle="bold"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

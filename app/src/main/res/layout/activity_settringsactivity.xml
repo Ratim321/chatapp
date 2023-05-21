@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:foregroundTint="#B11B1B"
+    tools:context=".Settringsactivity">
+
+    <ImageView
+        android:id="@+id/settingsbackarraow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <LinearLayout
+        android:id="@+id/flinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsbackarraow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#FFFFFF"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:src="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_plus" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#100606" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="Enter your name"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#100606" />
+
+            <EditText
+                android:id="@+id/etStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="About"
+                android:textColor="@color/black"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:elevation="15sp"
+            android:background="#1966FB"
+            android:layout_gravity="right"
+            android:text="Save" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storyimg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#FFFFFF"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:src="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/storyimgplus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_plus" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".sighnup">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/userprofile"
+
+        android:layout_width="345dp"
+
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_url="https://assets6.lottiefiles.com/packages/lf20_q5pk6p1k.json" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Login"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/clicksighnup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="New User?sign up"
+        android:textColor="#5445E3"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/sighnupwithyourphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Sign up with your phone"
+        android:textColor="#5445E3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sighnin"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/passoward" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sighnin"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/login"
+        android:elevation="15dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/goggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/passoward"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="48dp"
+        android:hint="Passoward"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#716C6C"
+        app:layout_constraintBottom_toTopOf="@+id/sighnin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.0">
+
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goggle"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:background="@drawable/extrabutton"
+        android:elevation="15dp"
+        android:text="Goggle"
+        app:layout_constraintBottom_toTopOf="@+id/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sighnin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facebook"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+
+        android:background="@drawable/extrabutton"
+        android:elevation="15dp"
+        android:text="Facebook"
+        app:layout_constraintBottom_toTopOf="@+id/clicksighnup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goggle" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:hint="Email Id"
+
+        android:textColor="@color/black"
+        android:textColorHint="#716C6C"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="279dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="467dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="434dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="195dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="394dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="106dp" />
+
+    <ImageView
+        android:id="@+id/hidepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/passoward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/passoward"
+        app:layout_constraintTop_toBottomOf="@+id/passoward"
+        app:srcCompat="@drawable/hidepass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
